@@ -6,8 +6,8 @@ export default async function handler(
   response: VercelResponse,
 ) {
   // Ensure this is the actual URL of the AI service you want to proxy to
-  const AI_SERVICE_URL = 'YOUR_ACTUAL_AI_SERVICE_ENDPOINT_URL';
-  const API_KEY = process.env.AI_SERVICE_API_KEY;
+  const AI_SERVICE_URL = https://openrouter.ai/api/v1;
+  const API_KEY = process.env.OPENROUTER_API_KEY;
 
   if (request.method !== 'POST') {
     response.setHeader('Allow', ['POST']);
